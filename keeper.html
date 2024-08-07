@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Keeper</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main_style.css">
+  <link rel="stylesheet" href="styles/onlyfor.css">
+</head>
+<body>
+    <header class="jumbotron">
+        <img class="logo" src="/images/logo.png" alt="">
+      </header>
+
+<div class="container">
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Все проекты</a></li>
+      <li class="breadcrumb-item active" aria-current="page">WordKeeper</li>
+    </ol>
+  </nav>
+
+    <div class="incontainer">
+
+    <p>Этот проект — внутренний проект Planet Studio.</p>
+
+
+
+    <div class="wrapper">
+        <div class="first-wrapper">
+          <img class="huge-img" src="/images/shape-1.svg" alt="">
+        </div>
+        <div class="second-wrapper-left">
+          <h2 class="h2-mcs">Выявленная нами проблема, которую необходимо было решить:</h2>
+          <p class="p-mcs">Для решения внутренних вопросов было необходимо отслеживать сотни чатов для извлечения из них важной нам информации. Мы думали делать это вручную, однако понимали неэффективность такого решения: надо и платить людям, и они могут упускать важные для нас сообщения, так как чатов сотни, в каждом появляется по 1000 сообщений в день, очень тяжело за всем уследить. Исходя из всего пришли к необходимости автоматизировать этот процесс.</p>
+        </div>
+      </div>
+
+
+
+
+      <div class="wrapper wrapper-right">
+        <div class="second-wrapper-right">
+          <h2 class="h2-mcs">Наше решение:</h2>
+          <p class="p-mcs cut-right">Путём более углублённого изучения проблемы мы пришли к необходимости автоматизировать процесс, для этого разработали многофункциональный скрипт. Во время изучения проблемы мы пришли ещё к такому выводу, что продукт можем использовать не только мы для своих задач, поэтому сейчас активно занимаемся выпуском программы в свет. Для этого мы разработали интерфейс взаимодействия с этим скриптом в виде веб-приложения с понятным и интуитивным дизайном, чтобы упростить работу с программой для любого, желающего ей попользоваться.</p>
+        </div>
+        <div class="first-wrapper">
+          <img class="mobile-margin" src="/images/shape-2.svg" alt="">
+        </div>
+      </div>
+
+
+      <img class="keeplogo" src="/images/keeplogo.svg" alt="">
+
+
+
+
+      <div class="wrapper">
+        <div class="first-wrapper">
+          <img class="huge-img mobile-margin" src="/images/shape-4.svg" alt="">
+        </div>
+        <div class="second-wrapper-left">
+          <h2 class="h2-mcs">Основной функционал и преимущества программы:</h2>
+          <p class="p-mcs cut-right-2">1. Мы добавляем телеграмм чаты в базы и указываем ключевые слова для каждой из баз. <br> <br>2. При попадании нового чата в базу скрипт сначала проходиться по истории всех заданных чатов и их уже существующих в течении одного месяца сообщений, выискивая среди них совпадения с Вашими ключевыми словами (то есть чат попал -> сразу прошёл проверку по всем ключевым словам -> дал результат в виде сборника сообщений ссылкой , которые прошли проверку). <br> <br>3. После первичной проверки чата на него устанавливается «прослушка». Так что после появления нужного нам сообщения в этом чате, в закреплённый Телеграмм-канал моментально придёт уведомление о появлении сообщения с ссылкой на чат, где и есть это сообщение и ссылкой на пользователя, отправившего это сообщение. Это значит, что Вы не пропустите ничего важного и всегда будете самыми первыми в курсе самого важного для Вас. <br> <br>4. Списки чатов и ключевых слов можно редактировать, удалять и так далее.
+        </p>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="wrapper wrapper-right">
+        <div class="second-wrapper-right">
+          <h2 class="h2-mcs">Что необходимо для работы в программе:</h2>
+          <p class="p-mcs cut-right">Всё, что нужно сделать для работы программы — просто вступить в нужные чаты, добавить их в нужные базы (пользователь сам решает, в какую базу и какие чаты ему добавлять в зависимости от его целей), а также указать ключевые и запрещённые слова (функция указания запрещённых слов позволяет фильтровать сообщения более эффективно, это работает так, что Вам не придёт сообщение, где это запрещённое слово есть, даже, при наличии в нём какого-либо ключевого слова).</p>
+        </div>
+        <div class="first-wrapper">
+          <img class="mobile-margin" src="/images/shape-7.svg" alt="">
+        </div>
+      </div>
+
+
+      <div class="text-cont">
+      <h2 class="mobile-margin">Приложение разделено на две части:</h2>
+      <h3>-Telegram часть</h3>
+      <p>Необходима для формирования баз чатов и получения уведомлений о совпадении слов из сообщений с каким-либо ключевым словом</p>
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    <div class="mobile-screen-wrapper">
+        <div class="left-wrapper-mobile">
+            <img class="left" src="/images/left.svg" alt="">
+            <div class="text-left">
+                <p>Папки с чатами (в этом плане их 5 штук, что равно количеству баз чатов). <br>
+                    Они нужны для разграничения баз чатов. <br>
+                    Каждая папка - отдельная база чатов. <br>
+                    P.S. основная папка - первая база чатов</p>
+            </div>
+        </div>
+
+        <div class="whole-screen">
+            <img class="phone" src="/images/phone.png" alt="">
+        </div>
+
+        <div class="right-wrapper-mobile">
+            <img class="right" src="/images/right.svg" alt="">
+            <p class="text-right">Закреплённые каналы (количество закреплённых каналов равно количеству папок, а значит и количеству баз чатов).<br>
+                В них приходят уведомления в случае совпадения сообщения с, выбранными Вами,  ключевыми словами. <br>
+                Каждый из них отвечает за свою базу чатов. <br>
+                Название каждого канала можно менять только с сайта для корректного отображения информации</p>
+        </div>
+    </div>
+
+
+    <div class="incontainer">
+
+
+
+    <div class="text-cont">
+        <h3>Сайт</h3>
+        <p>Нужен для указания ключевых / запрещённых слов и смены имён баз чатов</p>
+
+        <div class="gallery-keep">
+            <p>На этой странице пользователь может указать ключевые слова для выбранной базы чатов</p>
+            <img class="photo-wk" src="/images/wordkeep1.png" alt="">
+        </div>
+
+        <div class="gallery-reverse">
+            <p>Эта страница нужна для указания запрещённых слов</p>
+            <img class="photo-wk" src="/images/wordkeep2.png" alt="">
+        </div>
+
+        <div class="gallery-keep">
+            <p>На этой странице, Вы можете изменить имена баз чатов</p>
+            <img class="photo-wk" src="/images/wordkeep3.png" alt="">
+        </div>
+
+    </div>
+
+
+    <div class="wrapper">
+        <div class="first-wrapper">
+          <img class="mobile-margin" src="/images/shape-6.svg" alt="">
+        </div>
+        <div class="second-wrapper-left cut-right">
+          <h2 class="h2-mcs">Использованные технологии</h2>
+  
+  
+          <p class="p-mcs last-p">Бэкенд часть проекта реализована с использованием Python, база данных MySQL.
+            Интерфейс реализован на HTML, CSS, JavaScript. Интерфейс полностью адаптивен.
+            </p>
+  
+        <div class="stack">
+  
+          <div class="el-wrapper">
+            <img src="/images/stack/html.svg" alt="">
+          </div>
+  
+          <div class="el-wrapper">
+            <img src="/images/stack/css.svg" alt="">
+          </div>
+  
+          <div class="el-wrapper">
+            <img src="/images/stack/js.svg" alt="">
+          </div>
+  
+          <div class="el-wrapper">
+            <img src="/images/stack/python.svg" alt="">
+          </div>
+  
+          <div class="el-wrapper mysql">
+            <img class="mysql" src="/images/stack/mysql.svg" alt="">
+          </div>
+  
+  
+        </div>
+  
+            
+        </div>
+      </div>
+
+
+
+      <div class="wrapper wrapper-right">
+        <div class="second-wrapper-right">
+          <h2 class="h2-mcs">Итог</h2>
+          <p class="p-mcs">Мы закрыли наши потребности и понемногу закрываем те же самые потребности нашим пользователям. Мы невероятно горды, за то, что такой сложной программой сейчас способен пользоваться любой желающий!</p>
+        </div>
+        <div class="first-wrapper">
+          <img class="mobile-margin" src="/images/shape-8.svg" alt="">
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+</div>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проект - МЧС</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main_style.css">
+  <link rel="stylesheet" href="styles/adaptive.css">
+</head>
+
+<body>
+
+  <header class="jumbotron">
+    <img class="logo" src="/images/logo.png" alt="">
+  </header>
+
+
+  <div class="container">
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Все проекты</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Проект МЧС</li>
+      </ol>
+    </nav>
+
+
+    <div class="mt-3">
+
+
+      <p>Заказчик: (МЧС ЛНР)</p>
+
+
+
+      <div class="wrapper">
+        <div class="first-wrapper">
+          <img class="huge-img" src="/images/shape-1.svg" alt="">
+        </div>
+        <div class="second-wrapper-left">
+          <h2 class="h2-mcs">Проблема заказчика:</h2>
+          <p class="p-mcs">Координация взводов и передача важной информации осуществляется в ручном режиме (через телефонные звонки).
+            А главное в этой проблеме, что невозможно отследить, кто и где совершил ошибки, передал ложную информацию,
+            дал неправильные координаты и так далее.</p>
+        </div>
+      </div>
+
+
+    
+      <div class="wrapper wrapper-right">
+        <div class="second-wrapper-right">
+          <h2 class="h2-mcs">Наше решение:</h2>
+          <p class="p-mcs">Путём общения и согласования деталей с заказчиком мы пришли к решению в виде приложения, где вся
+            координация будет происходить в удобном и гораздо более лёгком формате, а также с фиксацией всего
+            происходящего во взводах и во время аварий.</p>
+        </div>
+        <div class="first-wrapper">
+          <img class="mobile-margin" src="/images/shape-2.svg" alt="">
+        </div>
+      </div>
+
+
+
+
+      <div class="wrapper">
+        <div class="first-wrapper">
+          <img class="mobile-margin" src="/images/shape-8.svg" alt="">
+        </div>
+        <div class="second-wrapper-left">
+          <h2 class="h2-mcs-left">Суть приложения в его уникальной и сложной функциональности. Главное в нём:</h2>
+          <p class="p-mcs p-notfull">Спасательный взвод отправляет сообщение системе в случае аварии на шахте, за которую он (взвод) отвечает.
+            Система на основе отправленных в сообщении данных понимает, каким остальным взводам и службам этих взводов
+            необходимо ликвидировать эту аварию и отправляет им сообщение, в котором описана вся необходимая информация
+            для действия (сказано куда ехать и каким службам. К примеру если службы какого-то взвода нет на смене, будет
+            указано, что эта служба необходима для ликвидации и надо бы как-то её подготовить к работе).</p>
+        </div>
+      </div>
+
+
+      <div class="wrapper wrapper-right">
+        <div class="second-wrapper-right cut-right">
+          <h2 class="h2-mcs">Немного подробностей реализации:</h2>
+          <p>Приложение разделено на две части (сделано через умную систему разграничения доступа, которая понимает, кто на
+            данный момент использует приложение):</p>
+          <p class="fw-bolder">⁃ администраторская (к ней имеет доступ только один, управляющий всеми остальными, взвод)</p>
+          <p class="p-mcs">В этой части реализован функционал авторизации. После входа есть возможность видеть состояние взводов, а также
+            получать и обрабатывать информацию о всех авариях, наблюдать и координировать действия взводов во время этих
+            аварий. Ещё для этой части есть доступ к статистике аварий, действий взводов и всей информации о заступлении
+            взводов на смену (сколько человек, кто командир, какие службы и так далее)</p>
+
+        </div>
+        <div class="first-wrapper">
+          <img class="middle-img mobile-margin" src="/images/shape-6.svg" alt="">
+        </div>
+      </div>
+
+      
+
+
+    <div>
+      <img class="mch-first" src="/images/vgsvMainPage.png" alt="" style="width: 100%">
+    </div>
+    <div>
+      <p class="fw-bolder">ВГСВ (часть приложения для взвода)</p>
+
+      <p>В этой части реализован функционал авторизации взводов, заполнения форм заступления взводов на смену, где
+        указываются имена командиров, списки служб и так далее, заполнение форм в случае аварии.</p>
+      <img class="mch-first" src="/images/vgsoMainPage-2.png" alt="" style="width: 100%">
+    </div>
+
+
+    
+    <p class="just-p">Также в этой программе ведётся учёт всей статистики работы взводов. Это позволяет, к примеру, отследить работу и эффективность сотрудников, что в последствии позволит оптимизировать внутренние процессы работы в компании, или принимать решения о премиях эффективным работникам и так далее.</p>
+
+
+
+
+
+    <div class="wrapper">
+      <div class="first-wrapper">
+        <img class="mobile-margin" src="/images/shape-4.svg" alt="">
+      </div>
+      <div class="second-wrapper-left cut-right">
+        <h2 class="h2-mcs">Использованные технологии</h2>
+
+
+        <p class="p-mcs last-p">Бэкенд часть проекта реализована на PHP 8.2 с использованием популярных для этого языка библиотек, база данных MySQL, управление сервером через Apache. <br><br>
+          Интерфейс реализован на HTML, CSS, JavaScript, Bootstrap. Он полностью адаптивен. Также для заказчика было важно динамическое обновление информации на главных страницах приложения, чтобы не пропустить ни одной аварии и успеть спасти людей, поэтому интерфейс динамический, реализован через AJAX (а если точнее через JavaScript библиотеку HTTP-запросов Axios)
+          </p>
+
+      <div class="stack">
+
+        <div class="el-wrapper">
+          <img src="/images/stack/html.svg" alt="">
+        </div>
+
+        <div class="el-wrapper">
+          <img src="/images/stack/css.svg" alt="">
+        </div>
+
+        <div class="el-wrapper">
+          <img src="/images/stack/js.svg" alt="">
+        </div>
+
+        <div class="el-wrapper">
+          <img src="/images/stack/php.svg" alt="">
+        </div>
+
+        <div class="el-wrapper">
+          <img src="/images/stack/bootstrap.svg" alt="">
+        </div>
+
+        <div class="el-wrapper mysql">
+          <img class="mysql" src="/images/stack/mysql.svg" alt="">
+        </div>
+
+
+      </div>
+
+          
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="wrapper wrapper-right">
+      <div class="second-wrapper-right">
+        <h2 class="h2-mcs mobile-margin">Обслуживание работоспособности приложения:</h2>
+        
+
+        <p>Мы ежемесячно делаем так, чтобы приложение функционировало без нареканий, постоянно делаем его более эффективным (подключаем новые технологии, совершенствуем код), а также дорабатываем функционал по необходимости для заказчика.</p>
+
+        <h2>Итог</h2>
+    
+        <p class="p-mcs">Заказчик уже в полной мере протестировал и интегрировал приложение в свои процессы. Поэтому, теперь, Planet Studio делает свой вклад в спасение жизней людей!</p>
+
+
+      </div>
+      <div class="first-wrapper">
+        <img class="middle-img" src="/images/shape-7.svg" alt="">
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
